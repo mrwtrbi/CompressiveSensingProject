@@ -9,11 +9,11 @@ import time
 import matplotlib.pyplot as plt
 
 # Étape 1 : Charger le dictionnaire appris
-D = pd.read_csv('Dico-appris.csv', header=None, dtype=float).values
+D = pd.read_csv('./Dico-appris.csv', header=None, dtype=float).values
 
 
 # Charger les signaux depuis le fichier Excel, en utilisant la première ligne comme en-tête
-df_signals = pd.read_excel('Classeur1.xlsx', header=0)  # header=0 est la valeur par défaut
+df_signals = pd.read_excel("/content/CompressiveSensingProject/DonneesProjet.xlsx", sheet_name="vecteurs pour valider")  # header=0 est la valeur par défaut
 
 
 X1 = df_signals.iloc[:, 0].values
